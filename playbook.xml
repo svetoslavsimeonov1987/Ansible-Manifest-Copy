@@ -1,0 +1,7 @@
+- name: Copy script
+  hosts: all
+  tasks:
+  - name: copy
+    copy:
+        src: https://github.com/svetoslavsimeonov1987/Ansible-Manifest-Copy/blob/master/manifest.txt
+        dest: C:\
