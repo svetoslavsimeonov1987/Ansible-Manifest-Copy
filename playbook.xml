@@ -1,7 +1,8 @@
-- name: Copy script
+- 
+  name: Copy manifest file
   hosts: all
   tasks:
-  - name: copy
-    copy:
-        src: https://github.com/svetoslavsimeonov1987/Ansible-Manifest-Copy/blob/master/manifest.txt
-        dest: C:\
+   - name: copy
+     copy:
+        src: https://vcs.sys.schwarz/simeonov/Ansible-AM-Technology-Training/src/branch/master/manifest.txt
+        dest: /tmp/
